@@ -1,0 +1,74 @@
+ISD lab sheet week 1
+Answer the following questions (in writing) to reflect on the contents of the
+lecture today. You can use the lecture slides as well as any source you find
+online, however, if you use an online source, please briefly mention it in your
+answer (like “as seen on https://www.python.org/”).
+Elaborate in your answers where you are asked to explain something. Your
+answers will be part of your logbook (once we have set it up) and therefore
+please store your answer document (preferable .doc or .docx) on your UWL
+cloud storage (see lecture slides) or wherever convenient for you.
+Your answer document should be at least a page long. You can write more but
+also keep your answers concise.
+Questions:
+1. What is a code repository (often also called version control system) used
+for?
+2. Why is it advantageous to use a code repository?
+3. Describe the different “layers” of Software that exist on a typical
+computer and explain why there are different layers of software.
+4. Describe what an algorithm is and explain why it is a useful “tool” to
+translate from a human level problem (we can think of) to a computer
+program.
+5. Write an algorithm that describes how to make scrambled eggs, try to
+use control words, like IF, WHEN, UNTIL, WHILE, WAIT, AND, OR.
+6. Is Idle (the Python language shell) an Interpreter or an Compiler or both?
+Explain your answer. 
+For the practical part this lab please save the Python programs that you create
+and take screenshots of the execution (evaluation) of your programs.
+1) Write a command in the Idle shell that says “Hello world”
+2) Write a program that produces the following output:
+Hello World
+I am in my ISD class right now
+-- Brief lecture --
+A simple way to store variables (values) in your program is to use variables.
+Variables are placeholders that can store values, like strings (words), numbers
+(int) etc.
+To create a variable, just give it a name and an initial value, for example for a
+number:
+number = 7
+or for a String (words):
+myword = “This is my word”
+An interesting function to easily allow a user to enter input to your program is
+the input(“query”) function. Input(“query”) is asking the user the “query” and
+reads the next input from the user (that the user sends, when pressing the
+Return key). So an example for the use of input to ask the user for his/her
+name looks like:
+yourname = input(“Please enter your name”)
+The above line will display “Please enter your name”
+And then reads the input from the user and assigns the String (word) the user
+typed in to the variable “yourname”
+-- Brief lecture end ---
+3) Write a program that asks the user for his/her name and produces an output
+like:
+Hi there, what is your name?
+>User input to be read<
+Hello
+(Users name)
+How are you?
+-- Brief lecture –
+Input(“query”) can only return Strings (words).
+If we want to ask the user for a number , we need to modify the process of
+using input(“query”), as a number is different to a word, or as we say an
+integer (whole number) is different to a String (word). So we need to convert
+the String we get from the input(“query”) function into an integer (number).
+To do so we use a typecast (Details in the next lecture), that basically
+transforms the written number from the String into our integer number. It
+works like this:
+mynumber = int(input(“Please enter a number”))
+The “int” bit is transforming the String we get from our input function into the
+integer number format.
+Caveat: We must actually enter a number, like “17” as input, as a numberword,
+like “seventeen” could not be transformed into a number.
+-- Brief lecture ends --
+4) Write a program that asks for two numbers (Python has all the basic
+mathematical functions in place, like +,- etc.), adds them up and displays the
+result. 
